@@ -22,7 +22,7 @@ app.set('view engine', 'handlebars');
 app.disable('etag');
 
 // Connect to our mongo database
-mongoose.connect('mongodb://localhost/react-tweets');
+mongoose.connect('mongodb://localhost/tweets');
 
 // Create a new twitter api instance
 var twitter_api = new Twitter(config.twitter);
