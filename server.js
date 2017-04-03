@@ -125,3 +125,5 @@ function constructNewTweet(data){
 	}
 	return tweet;
 }
+
+module.exports = server
