@@ -1,0 +1,31 @@
+{
+  "name": "TapingoApp",
+  "version": "1.0.0",
+  "description": "Show all tweets with #tapingo",
+  "main": "app.js",
+  "scripts": {
+    "browserify": "browserify app.js | uglifyjs > public/js/bundle.js"
+  },
+  "author": "Tin Che",
+  "license": "",
+  "dependencies": {
+    "express": "~4.15.2",
+    "express-handlebars": "~3.0.0",
+    "mongoose": "^4.2.6",
+    "node-jsx": "~0.13.3",
+    "react": "~15.4.2",
+    "socket.io": "^1.1.0",
+    "twitter": "^1.2.0"
+  },
+  "devDependencies": {
+    "browserify": "~14.1.0",
+    "nodemon": "^1.2.1",
+    "reactify": "~1.1.1",
+    "uglify-js": "~2.8.20"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
